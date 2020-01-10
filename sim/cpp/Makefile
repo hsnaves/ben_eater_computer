@@ -15,6 +15,7 @@ OBJS     := $(subst .cpp,.o,$(SRCS))
 OBJS     := $(addprefix $(OBJDIR)/,$(OBJS)) $(VLIB)
 RM       := rm -rf
 
+#.PHONY: all
 all: sim run_sim
 
 $(OBJDIR)/%.o: %.cpp
